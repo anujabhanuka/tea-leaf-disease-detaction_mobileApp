@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "TeaLeaf",
+    "slug": "tealeaf",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/tealeaf-icon.png",
+    "scheme": "tealeafdiseasedetaction",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/images/tealeaf-icon.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#153E32",
+        "foregroundImage": "./assets/images/tealeaf-icon.png",
+        "monochromeImage": "./assets/images/tealeaf-icon.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/tealeaf-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow TeaLeaf to use your camera to photograph tea leaves."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow TeaLeaf to use your location to pin leaf analyses on the map."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
